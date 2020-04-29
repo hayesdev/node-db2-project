@@ -5,8 +5,8 @@ exports.up = async function (knex) {
     table.text("make").notNull();
     table.text("model").notNull();
     table.integer("mileage").notNull();
-    table.text("transmission").notNull();
-    table.boolean("salvage").notNull().defaultTo(false);
+    table.text("transmission").defaultTo("N/a");
+    table.text("title").defaultTo("N/a");
   });
 };
 
